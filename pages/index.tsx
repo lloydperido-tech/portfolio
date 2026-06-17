@@ -7,8 +7,10 @@ export default function Home() {
   return (
     <Layout>
       <section className="hero">
-        <div style={{ background: 'linear-gradient(135deg, rgba(124, 58, 237, 0.4) 0%, rgba(167, 139, 250, 0.2) 50%, rgba(26, 21, 48, 0.8) 100%)' }}></div>
-        <div>
+        <div className="hero-visual">
+          <img src="/images/profile_front.jpg" alt="Profile front" className="hero-image" />
+        </div>
+        <div className="hero-copy">
           <p className="eyebrow">Computer Science Engineer</p>
           <h1>Lloyd Perido</h1>
           <p className="lead">

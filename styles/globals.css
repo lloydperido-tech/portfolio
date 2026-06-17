@@ -134,9 +134,9 @@ a.button-secondary:hover {
   gap: 48px;
 }
 
-.hero {
+ .hero {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1.05fr 1fr;
   gap: 0;
   padding: 0;
   align-items: stretch;
@@ -147,19 +147,14 @@ a.button-secondary:hover {
 }
 
 .hero::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(45, 36, 69, 0.9) 0%, rgba(26, 21, 48, 0.7) 100%);
-  z-index: 1;
-  pointer-events: none;
+  display: none;
 }
 
-.hero > div:first-child {
-  grid-column: 2;
+.hero-visual {
+  background: transparent;
+}
+
+.hero-copy {
   padding: 60px 48px;
   display: flex;
   flex-direction: column;
